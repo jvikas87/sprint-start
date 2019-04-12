@@ -1,0 +1,8 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: marks-dummy-pod
+spec:
+  containers:
+    - name: dummy
+      image: jvikas87/demo
