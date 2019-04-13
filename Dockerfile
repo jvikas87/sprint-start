@@ -1,6 +1,4 @@
-FROM maven:latest
-RUN git clone 'https://github.com/jvikas87/sprint-start.git'
-WORKDIR sprint-start
-RUN git checkout $(git rev-parse HEAD)
-RUN mvn clean package
-CMD ["java","-jar","target/practise-0.0.1-SNAPSHOT.jar"]
+FROM openjdk:8-jdk-alpine
+ADD  target/practise-0.0.1-SNAPSHOT.jar /home
+WORKDIR /home
+CMD ["java","-jar","practise-0.0.1-SNAPSHOT.jar"]
