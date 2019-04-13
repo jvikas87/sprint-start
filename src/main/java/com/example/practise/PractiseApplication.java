@@ -21,7 +21,7 @@ class MyController{
 	@RequestMapping(value = "/index",method = RequestMethod.GET)
 	@ResponseBody
 	public String sayHello(){
-		return "Hello World";
+		return "Hello World Deployment";
 	}
 
 }
